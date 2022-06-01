@@ -14,10 +14,11 @@ class Station
     @trains_list.delete(train)
   end
 
-  def count_trains
-    trains_quantity = {}
-    @trains_list.group_by { |train| train.type }.each { |type, trains| trains_quantity[type] = trains.size }
+  def trains_list_by_type(type)
+    @trains_list.select { |train| train.type == type }
+  end
 
-    trains_quantity
+  def trains_quantity_by_type(type)
+    @trains_list.count { |train| train.type == type }
   end
 end
