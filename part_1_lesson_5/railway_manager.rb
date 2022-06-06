@@ -8,7 +8,6 @@ require_relative 'route'
 require_relative 'station'
 
 class RailwayManager
-
   def initialize
     @stations_list = []
     @trains_list = []
