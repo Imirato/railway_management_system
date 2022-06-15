@@ -1,0 +1,10 @@
+AllCops:
+  NewCops: enable
+
+Style/Documentation:
+  Exclude:
+    - "./**/*"
+
+Metrics/ClassLength:
+  Exclude:
+    - "./railway_manager.rb"
