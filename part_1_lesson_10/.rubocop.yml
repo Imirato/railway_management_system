@@ -1,0 +1,12 @@
+AllCops:
+  NewCops: enable
+  Exclude:
+    - "./railway_manager.rb"
+
+Style/Documentation:
+  Exclude:
+    - "./**/*"
+
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - "./modules/validation.rb"
